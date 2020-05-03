@@ -1,0 +1,239 @@
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+/* Navbars */
+
+#navbar {
+    visibility: hidden;
+    transition: opacity 0.75s;
+}
+
+.navbar-fixed {
+    opacity: 1
+}
+
+.navbar-trans {
+    opacity: 0;
+}
+
+.navbar-light .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: black!important;
+}
+
+.thumbnail-pic {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+#header {
+    background: #364958!important;
+}
+
+.button-hover::-moz-focus-inner {
+    border: 0;
+    color:red;
+}
+
+.button-hover:hover::-moz-focus-inner {
+    border: 0;
+    transition-duration: 0.4s;
+    color: black;
+}
+
+.device-wrapper {
+    width: 85%;
+  }
+  
+  /* ben182 
+   * To control height you need little math:
+   * Height 200px: 200 / 209.829619921363 * 100 = 
+  */
+
+@media only screen and (min-width : 0px) and (max-width : 767px){
+    .height {
+        min-height: 20vh;
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .height {
+        min-height: 55vh;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.height-about {
+    min-height: 70vh;
+}
+.macbook-bg {
+    background: url(../img/macbook.png) no-repeat;
+}
+
+/* .text-height {
+    min-height: 30vh;
+} */
+
+.img-carousel {
+    height: 21.1vw;
+    width: auto;
+}
+
+.img-carousel2 {
+    height: 19vw;
+    width: auto;
+}
+
+#about {
+    background: #f79d65!important;
+}
+
+/* TIMELINE STUFF */
+
+.timeline {
+    margin-top: 20px;
+    width: 65%;
+    margin-left: 20%;
+    border-top: 3px solid black;
+    padding-top: 0px;
+}
+
+.event {
+    padding: 20px 10px 20px 18px;
+    margin-right: 10px;
+}
+
+.event .event-info {
+    position: relative;
+    bottom: 60px;
+    height: 30px;
+    margin-right: 40px;
+    width: 100%;
+}
+
+.event .event-info .event-date {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.employ {
+    font-size: 11px;
+}
+
+.map-marker {
+    color: #55828b;
+}
+
+/* END TIMELINE STUFF */
+
+.between-line {
+    width: 50px;
+    height: 5px;
+    margin: 0 auto;
+}
+
+#skills {
+    background: #55828b!important;
+}
+
+.height-skills {
+    min-height: 60vh;
+}
+
+#projects {
+    background: #f79d65!important;
+}
+
+.projects-height {
+    min-height: 80vh;
+}
+
+.projects-header {
+    font-size: 30px;
+}
+
+.projects {
+    font-size: 16px;
+}
+
+.title-underline {
+    width: 100px;
+    height: 5px;
+    margin: 0 auto;
+}
+
+#contact {
+    background: #55828b!important
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container-contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .footer-height {
+      background: #364958;
+      min-height: 10vh;
+  }
