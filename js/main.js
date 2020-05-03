@@ -1,3 +1,9 @@
+/*
+-----------------------------------------------------------------------------------------------------------------------------------
+CONTACT FORM - This function implements a JQuery and AJAX script to validate contact form email/message/body and then send an email
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
 $(document).ready(function() {
     var delay = 2000;
     $('.submit-button').click(function(e){
@@ -65,6 +71,16 @@ function isValidEmailAddress(emailAddress) {
     return pattern.test(emailAddress);
 };
 
+/*
+END CONTACT FORM
+*/
+
+/*
+---------------------------------------------------------------------------------------------------------
+NAVBAR COLLAPSE - This function checks if users has scrolled far enough for the nav bar to fade into view
+---------------------------------------------------------------------------------------------------------
+*/
+
 $(window).scroll(function() {
     var about = $("#about").offset().top;   
     var skills = $("#skills").offset().top;
@@ -84,11 +100,17 @@ $(window).scroll(function() {
     }
 });
 
-// You can also pass an optional settings object
+/*
+END NAVBAR COLLAPSE
+*/
+
+
+// Resets contact form boxes upon submission
 function resetForm() {
     document.getElementById('contactForm').reset();
 }
 
+// Check if screen is mobile or desktop
 var isMobile = false; //initiate as false
 // device detection
 if ($(window).width() < 1000) {
